@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A590C11DAF25230006E45B /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C01DAF25230006E45B /* LoginForm.m */; };
+		21A590C71DAF31FE0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
+		21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
+		21A590CA1DAF54500006E45B /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C01DAF25230006E45B /* LoginForm.m */; };
+		453CCC4F1D9C0F80003C59B8 /* MyFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453CCC4E1D9C0F80003C59B8 /* MyFMTests.m */; };
+		456F3CCB1D9BBEE200E674FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCA1D9BBEE200E674FC /* main.m */; };
+		456F3CCE1D9BBEE200E674FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCD1D9BBEE200E674FC /* AppDelegate.m */; };
+		456F3CD41D9BBEE200E674FC /* SimpleEMSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD21D9BBEE200E674FC /* SimpleEMSDemo.storyboard */; };
+		456F3CD61D9BBEE200E674FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD51D9BBEE200E674FC /* Assets.xcassets */; };
+		456F3CD91D9BBEE200E674FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD71D9BBEE200E674FC /* LaunchScreen.storyboard */; };
+		456F3CFD1D9BBF4C00E674FC /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CE41D9BBF4C00E674FC /* AACEncoder.m */; };
+		456F3CFE1D9BBF4C00E674FC /* AudioVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CE61D9BBF4C00E674FC /* AudioVideoCapture.m */; };
+		456F3D0C1D9BBF4C00E674FC /* EMSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CF61D9BBF4C00E674FC /* EMSListener.m */; };
+		456F3D0D1D9BBF4C00E674FC /* H264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CF81D9BBF4C00E674FC /* H264Encoder.m */; };
+		456F3D0E1D9BBF4C00E674FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CFA1D9BBF4C00E674FC /* Reachability.m */; };
+		456F3D0F1D9BBF4C00E674FC /* Streamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CFC1D9BBF4C00E674FC /* Streamer.m */; };
+		456F3D111D9BBF5A00E674FC /* config in Resources */ = {isa = PBXBuildFile; fileRef = 456F3D101D9BBF5A00E674FC /* config */; };
+		456F3D121D9BBFA400E674FC /* EMSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F3CE01D9BBEFB00E674FC /* EMSLib.framework */; };
+		456F3D131D9BBFA400E674FC /* EMSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456F3CE01D9BBEFB00E674FC /* EMSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		456F3D171D9BBFB800E674FC /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3D161D9BBFB800E674FC /* PlayerView.m */; };
+		4584346D1DA5D93B00CF4E4C /* H264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CF81D9BBF4C00E674FC /* H264Encoder.m */; };
+		4584346E1DA5D93B00CF4E4C /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CE41D9BBF4C00E674FC /* AACEncoder.m */; };
+		4584346F1DA5D93B00CF4E4C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CFA1D9BBF4C00E674FC /* Reachability.m */; };
+		458434711DA5D93B00CF4E4C /* Streamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CFC1D9BBF4C00E674FC /* Streamer.m */; };
+		458434721DA5D93B00CF4E4C /* AudioVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CE61D9BBF4C00E674FC /* AudioVideoCapture.m */; };
+		458434731DA5D93B00CF4E4C /* EMSListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CF61D9BBF4C00E674FC /* EMSListener.m */; };
+		458434741DA5D93B00CF4E4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCD1D9BBEE200E674FC /* AppDelegate.m */; };
+		458434751DA5D93B00CF4E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCA1D9BBEE200E674FC /* main.m */; };
+		458434761DA5D93B00CF4E4C /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3D161D9BBFB800E674FC /* PlayerView.m */; };
+		458434781DA5D93B00CF4E4C /* EMSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456F3CE01D9BBEFB00E674FC /* EMSLib.framework */; };
+		4584347A1DA5D93B00CF4E4C /* config in Resources */ = {isa = PBXBuildFile; fileRef = 456F3D101D9BBF5A00E674FC /* config */; };
+		4584347B1DA5D93B00CF4E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD71D9BBEE200E674FC /* LaunchScreen.storyboard */; };
+		4584347C1DA5D93B00CF4E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD51D9BBEE200E674FC /* Assets.xcassets */; };
+		4584347D1DA5D93B00CF4E4C /* SimpleEMSDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F3CD21D9BBEE200E674FC /* SimpleEMSDemo.storyboard */; };
+		4584347F1DA5D93B00CF4E4C /* EMSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456F3CE01D9BBEFB00E674FC /* EMSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4584348E1DA5DA5F00CF4E4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584348D1DA5DA5F00CF4E4C /* ViewController.m */; };
+		458434921DA5DABA00CF4E4C /* BeachbodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434911DA5DABA00CF4E4C /* BeachbodyViewController.m */; };
+		458434951DA5DD0700CF4E4C /* BeachbodyDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458434931DA5DD0100CF4E4C /* BeachbodyDemo.storyboard */; };
+		458434961DA5DDF000CF4E4C /* BeachbodyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434911DA5DABA00CF4E4C /* BeachbodyViewController.m */; };
+		458434A61DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349A1DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m */; };
+		458434A71DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349A1DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m */; };
+		458434A81DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349C1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m */; };
+		458434A91DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349C1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m */; };
+		458434AA1DA5DEF400CF4E4C /* PassthroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349E1DA5DEF400CF4E4C /* PassthroughView.m */; };
+		458434AB1DA5DEF400CF4E4C /* PassthroughView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4584349E1DA5DEF400CF4E4C /* PassthroughView.m */; };
+		458434AC1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A01DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m */; };
+		458434AD1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A01DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m */; };
+		458434AE1DA5DEF400CF4E4C /* ShutterButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A31DA5DEF400CF4E4C /* ShutterButtonView.m */; };
+		458434AF1DA5DEF400CF4E4C /* ShutterButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A31DA5DEF400CF4E4C /* ShutterButtonView.m */; };
+		458434B01DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A51DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m */; };
+		458434B11DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434A51DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m */; };
+		458434B31DA5E06300CF4E4C /* ShutterButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458434B21DA5E06300CF4E4C /* ShutterButtonView.xib */; };
+		458434B41DA5E06300CF4E4C /* ShutterButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 458434B21DA5E06300CF4E4C /* ShutterButtonView.xib */; };
+		458434B71DA5E32A00CF4E4C /* StreamForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434B61DA5E32A00CF4E4C /* StreamForm.m */; };
+		458434B81DA5E32A00CF4E4C /* StreamForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 458434B61DA5E32A00CF4E4C /* StreamForm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		453CCC4B1D9C0F80003C59B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456F3CBE1D9BBEE200E674FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456F3CC51D9BBEE200E674FC;
+			remoteInfo = SimpleEMSDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		456F3D141D9BBFA400E674FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				456F3D131D9BBFA400E674FC /* EMSLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4584347E1DA5D93B00CF4E4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4584347F1DA5D93B00CF4E4C /* EMSLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21A590BF1DAF244B0006E45B /* LoginForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
+		21A590C01DAF25230006E45B /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
+		21A590C51DAF31FE0006E45B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		21A590C61DAF31FE0006E45B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		453CCC471D9C0F80003C59B8 /* MyFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		453CCC4E1D9C0F80003C59B8 /* MyFMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFMTests.m; sourceTree = "<group>"; };
+		453CCC501D9C0F80003C59B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456F3CC61D9BBEE200E674FC /* SimpleEMSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleEMSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456F3CCA1D9BBEE200E674FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		456F3CCC1D9BBEE200E674FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		456F3CCD1D9BBEE200E674FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		456F3CD31D9BBEE200E674FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SimpleEMSDemo.storyboard; sourceTree = "<group>"; };
+		456F3CD51D9BBEE200E674FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		456F3CD81D9BBEE200E674FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		456F3CDA1D9BBEE200E674FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456F3CE01D9BBEFB00E674FC /* EMSLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EMSLib.framework; sourceTree = "<group>"; };
+		456F3CE31D9BBF4C00E674FC /* AACEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		456F3CE41D9BBF4C00E674FC /* AACEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AACEncoder.m; sourceTree = "<group>"; };
+		456F3CE51D9BBF4C00E674FC /* AudioVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioVideoCapture.h; sourceTree = "<group>"; };
+		456F3CE61D9BBF4C00E674FC /* AudioVideoCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioVideoCapture.m; sourceTree = "<group>"; };
+		456F3CF51D9BBF4C00E674FC /* EMSListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSListener.h; sourceTree = "<group>"; };
+		456F3CF61D9BBF4C00E674FC /* EMSListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMSListener.m; sourceTree = "<group>"; };
+		456F3CF71D9BBF4C00E674FC /* H264Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264Encoder.h; sourceTree = "<group>"; };
+		456F3CF81D9BBF4C00E674FC /* H264Encoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264Encoder.m; sourceTree = "<group>"; };
+		456F3CF91D9BBF4C00E674FC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		456F3CFA1D9BBF4C00E674FC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		456F3CFB1D9BBF4C00E674FC /* Streamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Streamer.h; sourceTree = "<group>"; };
+		456F3CFC1D9BBF4C00E674FC /* Streamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Streamer.m; sourceTree = "<group>"; };
+		456F3D101D9BBF5A00E674FC /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		456F3D151D9BBFB800E674FC /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		456F3D161D9BBFB800E674FC /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		458434831DA5D93B00CF4E4C /* BeachbodyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeachbodyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		458434841DA5D93C00CF4E4C /* SimpleEMSDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SimpleEMSDemo copy-Info.plist"; path = "/Users/nazariomariano/Documents/Naz/Work/QuantumGlobal/Giroptic/RNDXcodeProjects/SimpleEMSDemo/SimpleEMSDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		4584348C1DA5DA5F00CF4E4C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4584348D1DA5DA5F00CF4E4C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		458434901DA5DABA00CF4E4C /* BeachbodyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeachbodyViewController.h; sourceTree = "<group>"; };
+		458434911DA5DABA00CF4E4C /* BeachbodyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeachbodyViewController.m; sourceTree = "<group>"; };
+		458434931DA5DD0100CF4E4C /* BeachbodyDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeachbodyDemo.storyboard; sourceTree = "<group>"; };
+		458434991DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+ShutterAnimations.h"; sourceTree = "<group>"; };
+		4584349A1DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+ShutterAnimations.m"; sourceTree = "<group>"; };
+		4584349B1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveShutterButtonViewMode.h; sourceTree = "<group>"; };
+		4584349C1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveShutterButtonViewMode.m; sourceTree = "<group>"; };
+		4584349D1DA5DEF400CF4E4C /* PassthroughView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassthroughView.h; sourceTree = "<group>"; };
+		4584349E1DA5DEF400CF4E4C /* PassthroughView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassthroughView.m; sourceTree = "<group>"; };
+		4584349F1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoShutterButtonViewMode.h; sourceTree = "<group>"; };
+		458434A01DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoShutterButtonViewMode.m; sourceTree = "<group>"; };
+		458434A11DA5DEF400CF4E4C /* ShutterButtonView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShutterButtonView+Private.h"; sourceTree = "<group>"; };
+		458434A21DA5DEF400CF4E4C /* ShutterButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShutterButtonView.h; sourceTree = "<group>"; };
+		458434A31DA5DEF400CF4E4C /* ShutterButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShutterButtonView.m; sourceTree = "<group>"; };
+		458434A41DA5DEF400CF4E4C /* VideoShutterButtonViewMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoShutterButtonViewMode.h; sourceTree = "<group>"; };
+		458434A51DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoShutterButtonViewMode.m; sourceTree = "<group>"; };
+		458434B21DA5E06300CF4E4C /* ShutterButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShutterButtonView.xib; sourceTree = "<group>"; };
+		458434B51DA5E32A00CF4E4C /* StreamForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamForm.h; sourceTree = "<group>"; };
+		458434B61DA5E32A00CF4E4C /* StreamForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamForm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		453CCC441D9C0F80003C59B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456F3CC31D9BBEE200E674FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456F3D121D9BBFA400E674FC /* EMSLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458434771DA5D93B00CF4E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458434781DA5D93B00CF4E4C /* EMSLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		453CCC4D1D9C0F80003C59B8 /* MyFMTests */ = {
+			isa = PBXGroup;
+			children = (
+				453CCC4E1D9C0F80003C59B8 /* MyFMTests.m */,
+				453CCC501D9C0F80003C59B8 /* Info.plist */,
+			);
+			path = MyFMTests;
+			sourceTree = "<group>";
+		};
+		456F3CBD1D9BBEE200E674FC = {
+			isa = PBXGroup;
+			children = (
+				456F3CC81D9BBEE200E674FC /* SimpleEMSDemo */,
+				453CCC4D1D9C0F80003C59B8 /* MyFMTests */,
+				456F3CC71D9BBEE200E674FC /* Products */,
+				458434841DA5D93C00CF4E4C /* SimpleEMSDemo copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		456F3CC71D9BBEE200E674FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456F3CC61D9BBEE200E674FC /* SimpleEMSDemo.app */,
+				453CCC471D9C0F80003C59B8 /* MyFMTests.xctest */,
+				458434831DA5D93B00CF4E4C /* BeachbodyDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456F3CC81D9BBEE200E674FC /* SimpleEMSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				456F3D151D9BBFB800E674FC /* PlayerView.h */,
+				456F3D161D9BBFB800E674FC /* PlayerView.m */,
+				456F3CE21D9BBF4C00E674FC /* SourceStream */,
+				456F3CE01D9BBEFB00E674FC /* EMSLib.framework */,
+				456F3CCC1D9BBEE200E674FC /* AppDelegate.h */,
+				456F3CCD1D9BBEE200E674FC /* AppDelegate.m */,
+				458434971DA5DEF400CF4E4C /* ShutterButtonView */,
+				4584348F1DA5DA9700CF4E4C /* BeachbodyDemo */,
+				4584348B1DA5DA5F00CF4E4C /* SimpleEMSDemo */,
+				456F3CD21D9BBEE200E674FC /* SimpleEMSDemo.storyboard */,
+				458434931DA5DD0100CF4E4C /* BeachbodyDemo.storyboard */,
+				456F3CD51D9BBEE200E674FC /* Assets.xcassets */,
+				456F3CD71D9BBEE200E674FC /* LaunchScreen.storyboard */,
+				456F3CDA1D9BBEE200E674FC /* Info.plist */,
+				456F3CC91D9BBEE200E674FC /* Supporting Files */,
+			);
+			path = SimpleEMSDemo;
+			sourceTree = "<group>";
+		};
+		456F3CC91D9BBEE200E674FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				456F3CCA1D9BBEE200E674FC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		456F3CE21D9BBF4C00E674FC /* SourceStream */ = {
+			isa = PBXGroup;
+			children = (
+				456F3D101D9BBF5A00E674FC /* config */,
+				456F3CE31D9BBF4C00E674FC /* AACEncoder.h */,
+				456F3CE41D9BBF4C00E674FC /* AACEncoder.m */,
+				456F3CF71D9BBF4C00E674FC /* H264Encoder.h */,
+				456F3CF81D9BBF4C00E674FC /* H264Encoder.m */,
+				456F3CE51D9BBF4C00E674FC /* AudioVideoCapture.h */,
+				456F3CE61D9BBF4C00E674FC /* AudioVideoCapture.m */,
+				456F3CF51D9BBF4C00E674FC /* EMSListener.h */,
+				456F3CF61D9BBF4C00E674FC /* EMSListener.m */,
+				456F3CF91D9BBF4C00E674FC /* Reachability.h */,
+				456F3CFA1D9BBF4C00E674FC /* Reachability.m */,
+				456F3CFB1D9BBF4C00E674FC /* Streamer.h */,
+				456F3CFC1D9BBF4C00E674FC /* Streamer.m */,
+			);
+			path = SourceStream;
+			sourceTree = "<group>";
+		};
+		4584348B1DA5DA5F00CF4E4C /* SimpleEMSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4584348C1DA5DA5F00CF4E4C /* ViewController.h */,
+				4584348D1DA5DA5F00CF4E4C /* ViewController.m */,
+			);
+			path = SimpleEMSDemo;
+			sourceTree = "<group>";
+		};
+		4584348F1DA5DA9700CF4E4C /* BeachbodyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				458434901DA5DABA00CF4E4C /* BeachbodyViewController.h */,
+				458434911DA5DABA00CF4E4C /* BeachbodyViewController.m */,
+				458434B51DA5E32A00CF4E4C /* StreamForm.h */,
+				458434B61DA5E32A00CF4E4C /* StreamForm.m */,
+				21A590BF1DAF244B0006E45B /* LoginForm.h */,
+				21A590C01DAF25230006E45B /* LoginForm.m */,
+				21A590C51DAF31FE0006E45B /* LoginViewController.h */,
+				21A590C61DAF31FE0006E45B /* LoginViewController.m */,
+			);
+			path = BeachbodyDemo;
+			sourceTree = "<group>";
+		};
+		458434971DA5DEF400CF4E4C /* ShutterButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				458434B21DA5E06300CF4E4C /* ShutterButtonView.xib */,
+				458434981DA5DEF400CF4E4C /* Animation */,
+				4584349B1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.h */,
+				4584349C1DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m */,
+				4584349D1DA5DEF400CF4E4C /* PassthroughView.h */,
+				4584349E1DA5DEF400CF4E4C /* PassthroughView.m */,
+				4584349F1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.h */,
+				458434A01DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m */,
+				458434A11DA5DEF400CF4E4C /* ShutterButtonView+Private.h */,
+				458434A21DA5DEF400CF4E4C /* ShutterButtonView.h */,
+				458434A31DA5DEF400CF4E4C /* ShutterButtonView.m */,
+				458434A41DA5DEF400CF4E4C /* VideoShutterButtonViewMode.h */,
+				458434A51DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m */,
+			);
+			path = ShutterButtonView;
+			sourceTree = "<group>";
+		};
+		458434981DA5DEF400CF4E4C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				458434991DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.h */,
+				4584349A1DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		453CCC461D9C0F80003C59B8 /* MyFMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 453CCC5A1D9C0F80003C59B8 /* Build configuration list for PBXNativeTarget "MyFMTests" */;
+			buildPhases = (
+				453CCC431D9C0F80003C59B8 /* Sources */,
+				453CCC441D9C0F80003C59B8 /* Frameworks */,
+				453CCC451D9C0F80003C59B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				453CCC4C1D9C0F80003C59B8 /* PBXTargetDependency */,
+			);
+			name = MyFMTests;
+			productName = MyFMTests;
+			productReference = 453CCC471D9C0F80003C59B8 /* MyFMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		456F3CC51D9BBEE200E674FC /* SimpleEMSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456F3CDD1D9BBEE200E674FC /* Build configuration list for PBXNativeTarget "SimpleEMSDemo" */;
+			buildPhases = (
+				456F3CC21D9BBEE200E674FC /* Sources */,
+				456F3CC31D9BBEE200E674FC /* Frameworks */,
+				456F3CC41D9BBEE200E674FC /* Resources */,
+				456F3D141D9BBFA400E674FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleEMSDemo;
+			productName = SimpleEMSDemo;
+			productReference = 456F3CC61D9BBEE200E674FC /* SimpleEMSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4584346B1DA5D93B00CF4E4C /* BeachbodyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458434801DA5D93B00CF4E4C /* Build configuration list for PBXNativeTarget "BeachbodyDemo" */;
+			buildPhases = (
+				4584346C1DA5D93B00CF4E4C /* Sources */,
+				458434771DA5D93B00CF4E4C /* Frameworks */,
+				458434791DA5D93B00CF4E4C /* Resources */,
+				4584347E1DA5D93B00CF4E4C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeachbodyDemo;
+			productName = SimpleEMSDemo;
+			productReference = 458434831DA5D93B00CF4E4C /* BeachbodyDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456F3CBE1D9BBEE200E674FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Wylog;
+				TargetAttributes = {
+					453CCC461D9C0F80003C59B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 456F3CC51D9BBEE200E674FC;
+					};
+					456F3CC51D9BBEE200E674FC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = A38A2SP759;
+						ProvisioningStyle = Automatic;
+					};
+					4584346B1DA5D93B00CF4E4C = {
+						DevelopmentTeam = A38A2SP759;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 456F3CC11D9BBEE200E674FC /* Build configuration list for PBXProject "SimpleEMSDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456F3CBD1D9BBEE200E674FC;
+			productRefGroup = 456F3CC71D9BBEE200E674FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456F3CC51D9BBEE200E674FC /* SimpleEMSDemo */,
+				453CCC461D9C0F80003C59B8 /* MyFMTests */,
+				4584346B1DA5D93B00CF4E4C /* BeachbodyDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		453CCC451D9C0F80003C59B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456F3CC41D9BBEE200E674FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458434B31DA5E06300CF4E4C /* ShutterButtonView.xib in Resources */,
+				456F3D111D9BBF5A00E674FC /* config in Resources */,
+				456F3CD91D9BBEE200E674FC /* LaunchScreen.storyboard in Resources */,
+				456F3CD61D9BBEE200E674FC /* Assets.xcassets in Resources */,
+				456F3CD41D9BBEE200E674FC /* SimpleEMSDemo.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		458434791DA5D93B00CF4E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4584347A1DA5D93B00CF4E4C /* config in Resources */,
+				458434951DA5DD0700CF4E4C /* BeachbodyDemo.storyboard in Resources */,
+				4584347B1DA5D93B00CF4E4C /* LaunchScreen.storyboard in Resources */,
+				4584347C1DA5D93B00CF4E4C /* Assets.xcassets in Resources */,
+				458434B41DA5E06300CF4E4C /* ShutterButtonView.xib in Resources */,
+				4584347D1DA5D93B00CF4E4C /* SimpleEMSDemo.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453CCC431D9C0F80003C59B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453CCC4F1D9C0F80003C59B8 /* MyFMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456F3CC21D9BBEE200E674FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456F3D0D1D9BBF4C00E674FC /* H264Encoder.m in Sources */,
+				458434921DA5DABA00CF4E4C /* BeachbodyViewController.m in Sources */,
+				456F3CFD1D9BBF4C00E674FC /* AACEncoder.m in Sources */,
+				458434B71DA5E32A00CF4E4C /* StreamForm.m in Sources */,
+				21A590C71DAF31FE0006E45B /* LoginViewController.m in Sources */,
+				458434AA1DA5DEF400CF4E4C /* PassthroughView.m in Sources */,
+				458434AE1DA5DEF400CF4E4C /* ShutterButtonView.m in Sources */,
+				458434A81DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m in Sources */,
+				456F3D0E1D9BBF4C00E674FC /* Reachability.m in Sources */,
+				458434A61DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m in Sources */,
+				456F3D0F1D9BBF4C00E674FC /* Streamer.m in Sources */,
+				458434AC1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */,
+				4584348E1DA5DA5F00CF4E4C /* ViewController.m in Sources */,
+				458434B01DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m in Sources */,
+				456F3CFE1D9BBF4C00E674FC /* AudioVideoCapture.m in Sources */,
+				456F3D0C1D9BBF4C00E674FC /* EMSListener.m in Sources */,
+				456F3CCE1D9BBEE200E674FC /* AppDelegate.m in Sources */,
+				456F3CCB1D9BBEE200E674FC /* main.m in Sources */,
+				456F3D171D9BBFB800E674FC /* PlayerView.m in Sources */,
+				21A590C11DAF25230006E45B /* LoginForm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4584346C1DA5D93B00CF4E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458434961DA5DDF000CF4E4C /* BeachbodyViewController.m in Sources */,
+				458434A91DA5DEF400CF4E4C /* LiveShutterButtonViewMode.m in Sources */,
+				458434AF1DA5DEF400CF4E4C /* ShutterButtonView.m in Sources */,
+				4584346D1DA5D93B00CF4E4C /* H264Encoder.m in Sources */,
+				458434B81DA5E32A00CF4E4C /* StreamForm.m in Sources */,
+				4584346E1DA5D93B00CF4E4C /* AACEncoder.m in Sources */,
+				4584346F1DA5D93B00CF4E4C /* Reachability.m in Sources */,
+				458434711DA5D93B00CF4E4C /* Streamer.m in Sources */,
+				458434721DA5D93B00CF4E4C /* AudioVideoCapture.m in Sources */,
+				458434731DA5D93B00CF4E4C /* EMSListener.m in Sources */,
+				458434B11DA5DEF400CF4E4C /* VideoShutterButtonViewMode.m in Sources */,
+				458434AB1DA5DEF400CF4E4C /* PassthroughView.m in Sources */,
+				458434A71DA5DEF400CF4E4C /* CAShapeLayer+ShutterAnimations.m in Sources */,
+				458434741DA5D93B00CF4E4C /* AppDelegate.m in Sources */,
+				21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */,
+				458434751DA5D93B00CF4E4C /* main.m in Sources */,
+				458434AD1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */,
+				458434761DA5D93B00CF4E4C /* PlayerView.m in Sources */,
+				21A590CA1DAF54500006E45B /* LoginForm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		453CCC4C1D9C0F80003C59B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456F3CC51D9BBEE200E674FC /* SimpleEMSDemo */;
+			targetProxy = 453CCC4B1D9C0F80003C59B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		456F3CD21D9BBEE200E674FC /* SimpleEMSDemo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456F3CD31D9BBEE200E674FC /* Base */,
+			);
+			name = SimpleEMSDemo.storyboard;
+			sourceTree = "<group>";
+		};
+		456F3CD71D9BBEE200E674FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456F3CD81D9BBEE200E674FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		453CCC571D9C0F80003C59B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyFMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wylog.-.MyFMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleEMSDemo.app/SimpleEMSDemo";
+			};
+			name = Debug;
+		};
+		453CCC581D9C0F80003C59B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyFMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wylog.-.MyFMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleEMSDemo.app/SimpleEMSDemo";
+			};
+			name = Release;
+		};
+		456F3CDB1D9BBEE200E674FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		456F3CDC1D9BBEE200E674FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456F3CDE1D9BBEE200E674FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A38A2SP759;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleEMSDemo",
+				);
+				INFOPLIST_FILE = SimpleEMSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbody.beach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		456F3CDF1D9BBEE200E674FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A38A2SP759;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleEMSDemo",
+				);
+				INFOPLIST_FILE = SimpleEMSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbody.beach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		458434811DA5D93B00CF4E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A38A2SP759;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleEMSDemo",
+				);
+				INFOPLIST_FILE = "SimpleEMSDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		458434821DA5D93B00CF4E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A38A2SP759;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SimpleEMSDemo",
+				);
+				INFOPLIST_FILE = "SimpleEMSDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		453CCC5A1D9C0F80003C59B8 /* Build configuration list for PBXNativeTarget "MyFMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				453CCC571D9C0F80003C59B8 /* Debug */,
+				453CCC581D9C0F80003C59B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456F3CC11D9BBEE200E674FC /* Build configuration list for PBXProject "SimpleEMSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456F3CDB1D9BBEE200E674FC /* Debug */,
+				456F3CDC1D9BBEE200E674FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456F3CDD1D9BBEE200E674FC /* Build configuration list for PBXNativeTarget "SimpleEMSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456F3CDE1D9BBEE200E674FC /* Debug */,
+				456F3CDF1D9BBEE200E674FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458434801DA5D93B00CF4E4C /* Build configuration list for PBXNativeTarget "BeachbodyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458434811DA5D93B00CF4E4C /* Debug */,
+				458434821DA5D93B00CF4E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456F3CBE1D9BBEE200E674FC /* Project object */;
+}
