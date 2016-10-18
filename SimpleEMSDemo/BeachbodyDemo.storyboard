@@ -208,6 +208,7 @@
                         <outlet property="streamGreeting" destination="g6f-Cs-xmi" id="iry-pJ-7QB"/>
                         <outlet property="streamStausLabel" destination="CMh-ma-t8D" id="zCE-Hv-vhD"/>
                         <outlet property="usernameLabel" destination="jEv-Ij-LlW" id="TUG-CV-ZiD"/>
+                        <segue destination="bfA-5C-hFq" kind="show" identifier="toLoginScreen" id="ppM-UQ-apr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYR-nN-aJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -324,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kG-ZM-nv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="-425.03748125937034"/>
+            <point key="canvasLocation" x="686" y="-1164"/>
         </scene>
         <!--Beachbody View Controller-->
         <scene sceneID="lj9-Td-FHO">

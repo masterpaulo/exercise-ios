@@ -75,14 +75,8 @@
     [self.shutterButtonView setDelegate:self];
     self.shutterMode = self.liveMode;
     
-    if (![self.username isEqualToString:@""]) {
-        NSLog(@"username = %@", self.username);
-        [self.shutterButtonView setHidden:YES];
-        [self.heartBeatButton setHidden:YES];
-        self.greetingLabel.text = [NSString stringWithFormat:@"Hi, %@!", [self.username capitalizedString]];
-        self.usernameLabel.text = [NSString stringWithFormat:@"USER : %@", [self.username capitalizedString]];
-        
-    }
+    [self setViewStreaming:NO];
+    [self getActiveUser];
     
     
     
@@ -91,11 +85,15 @@
 -(void)viewDidAppear:(BOOL)animated {
     [self startCapturing];
     [self restart];
+//    if (!([self.username length] > 0)) {
+//        [self performSegueWithIdentifier:@"toLoginScreen" sender:self];
+//    }
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.shutterMode defaultMode];
+//    [self getActiveUser];
 }
 
 - (void)startCapturing
@@ -112,6 +110,37 @@
     [self.audioEncoder resumeEncoding];
     [self.listener resumeMonitoring];
 }
+
+-(void)getActiveUser
+{
+    if ([self.username length] > 0) { //![self.username isEqualToString:@""]
+        NSLog(@"username = %@", self.username);
+        [self.shutterButtonView setHidden:YES];
+        [self.heartBeatButton setHidden:YES];
+        self.greetingLabel.text = [NSString stringWithFormat:@"Hi, %@!", [self.username capitalizedString]];
+        self.usernameLabel.text = [NSString stringWithFormat:@"USER : %@", [self.username capitalizedString]];
+    }
+    else{
+        [self setViewStreaming:NO];
+        
+    }
+}
+
+-(void)setViewStreaming:(BOOL)streaming {
+    if(streaming){
+        [self.shutterButtonView setHidden:NO];
+        [self.heartBeatButton setHidden:NO];
+        [self.blurView setHidden:YES];
+        [self.streamGreeting setHidden:YES];
+    }
+    else{
+        [self.shutterButtonView setHidden:YES];
+        [self.heartBeatButton setHidden:YES];
+        [self.blurView setHidden:NO];
+        [self.streamGreeting setHidden:NO];
+    }
+}
+
 
 - (IBAction)dismissTapped:(id)sender {
     [self.view endEditing:YES];
@@ -136,10 +165,11 @@
             self.configId = [[[info objectForKey:@"data"] objectForKey:@"configId"] intValue];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.shutterMode setEnabled:YES];
-                [self.shutterButtonView setHidden:NO];
-                [self.heartBeatButton setHidden:NO];
-                [self.blurView setHidden:YES];
-                [self.streamGreeting setHidden:YES];
+                [self setViewStreaming:YES];
+//                [self.shutterButtonView setHidden:NO];
+//                [self.heartBeatButton setHidden:NO];
+//                [self.blurView setHidden:YES];
+//                [self.streamGreeting setHidden:YES];
                 [self.shutterMode captureState];
             });
         }
@@ -153,11 +183,12 @@
 -(void)endBroadcast {
     self.streamStausLabel.text = @"";
     self.usernameLabel.text = @"Stream stoped";
-    [self.blurView setHidden:NO];
     [self.shutterMode defaultMode];
-    [self.streamGreeting setHidden:NO];
-    [self.shutterButtonView setHidden:YES];
-    [self.heartBeatButton setHidden:YES];
+//    [self.blurView setHidden:NO];
+//    [self.streamGreeting setHidden:NO];
+//    [self.shutterButtonView setHidden:YES];
+//    [self.heartBeatButton setHidden:YES];
+    [self setViewStreaming:NO];
     self.streamName  = nil;
     [self.streamForm clearForm];
     [self.mediaStreamer removeConfig:self.configId];
