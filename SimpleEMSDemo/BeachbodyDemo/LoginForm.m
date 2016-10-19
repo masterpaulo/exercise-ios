@@ -9,25 +9,32 @@
 
 #import "LoginForm.h"
 @interface LoginForm()
-@property (weak, nonatomic) IBOutlet UITextField *usernameFeild;
-@property (weak, nonatomic) IBOutlet UITextField *passwordFeild;
+//@property (weak, nonatomic) IBOutlet UITextField *usernameFeild;
+//@property (weak, nonatomic) IBOutlet UITextField *passwordFeild;
+@property (strong, nonatomic) NSArray *validUsernames;
 @end
 @implementation LoginForm
 
 -(IBAction)didSubmit:(id)sender {
+    _validUsernames = @[@"demo1", @"demo2", @"demo3"];
+    
     [self.usernameFeild resignFirstResponder];
     NSString *username = self.usernameFeild.text;
     NSLog(@"Did submit username: %@", username);
     
     
-    if (![username isEqualToString:@""]) {
+    if (![username isEqualToString:@""] && [_validUsernames containsObject:username]) {
         self.username = self.usernameFeild.text;
         if (self.delegate && [self.delegate respondsToSelector:@selector(didLoginForm:)]) {
             [self.delegate didLoginForm:self];
             
         }
     }else{
-        [self.usernameFeild becomeFirstResponder];
+//        [self.usernameFeild becomeFirstResponder];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(loginFailed)]) {
+            [self.delegate loginFailed];
+            
+        }
     }
 }
 

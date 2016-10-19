@@ -13,6 +13,7 @@
 @protocol LoginFormDelegate<NSObject>
 
 -(void)didLoginForm:(LoginForm*)form;
+-(void)loginFailed;
 
 @end
 
@@ -21,6 +22,8 @@
 @property (assign) id<LoginFormDelegate> delegate;
 @property (strong, nonatomic) NSString *username;
 @property (strong, nonatomic) NSString *password;
+@property (strong, nonatomic) IBOutlet UITextField *usernameFeild;
+@property (strong, nonatomic) IBOutlet UITextField *passwordFeild;
 
 -(void)clearForm;
 

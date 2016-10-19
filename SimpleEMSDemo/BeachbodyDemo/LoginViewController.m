@@ -36,18 +36,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showHelpDialogue:(id)sender {
+    [self showHelpInfo];
+}
 
+-(void)showHelpInfo{
+    UIAlertController* helpInfoAlert = [UIAlertController alertControllerWithTitle:@"Hi there!" message:@"Please use the following usernames without a password:\ndemo1\ndemo2\ndemo3" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okBtn = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [_loginForm.usernameFeild becomeFirstResponder];
+    }];
+    
+    [helpInfoAlert addAction:okBtn];
+    
+    [self presentViewController:helpInfoAlert animated:YES completion:nil];
+}
 
 #pragma mark LoginFormDelegate
 -(void)didLoginForm:(LoginForm *)form {
     NSLog(@"FROM Controller - username: %@", form.username);
     self.username = form.username;
     
-    
 //    [self.delegate loginController:self didFinishLogin:username];
     [self performSegueWithIdentifier:@"gotoNext" sender:self];
 }
 
+-(void)loginFailed{
+    [self showHelpInfo];
+}
 
 
 

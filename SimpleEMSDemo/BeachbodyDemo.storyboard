@@ -295,13 +295,28 @@
                                             <action selector="didSubmit:" destination="sCb-Pt-C4T" eventType="touchUpInside" id="hZv-QS-w3I"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbi-DD-wez">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SEf-DL-NA7"/>
+                                            <constraint firstAttribute="width" constant="83" id="bHR-QH-dql"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Need help?">
+                                            <color key="titleColor" red="0.3074718702" green="0.36047811800000001" blue="0.57987075040000002" alpha="0.87272581339999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showHelpDialogue:" destination="bfA-5C-hFq" eventType="touchUpInside" id="fQZ-EL-pVU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DIU-sx-6ZQ" firstAttribute="centerX" secondItem="sCb-Pt-C4T" secondAttribute="centerX" id="1cD-dn-80w"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="top" secondItem="DIU-sx-6ZQ" secondAttribute="bottom" constant="92" id="1ck-kh-Z8b"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="leading" secondItem="sCb-Pt-C4T" secondAttribute="leading" constant="67" id="BR3-ae-Dwi"/>
+                                    <constraint firstItem="bbi-DD-wez" firstAttribute="top" secondItem="io2-4D-oA8" secondAttribute="bottom" constant="17" id="UQF-GS-rJt"/>
                                     <constraint firstItem="PMz-2Y-ady" firstAttribute="centerX" secondItem="DIU-sx-6ZQ" secondAttribute="centerX" constant="-1" id="YMe-Ik-oNV"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="top" secondItem="Ueo-07-omr" secondAttribute="bottom" constant="43" id="Yq9-YI-SEH"/>
+                                    <constraint firstItem="bbi-DD-wez" firstAttribute="centerX" secondItem="io2-4D-oA8" secondAttribute="centerX" id="eLP-Xz-b72"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="trailing" secondItem="io2-4D-oA8" secondAttribute="trailing" id="hC2-zu-XFS"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="centerX" secondItem="6Wf-dU-SbC" secondAttribute="centerX" id="icW-Db-y1a"/>
                                     <constraint firstItem="io2-4D-oA8" firstAttribute="top" secondItem="6Wf-dU-SbC" secondAttribute="bottom" constant="27" id="j81-mS-J4m"/>
@@ -332,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kG-ZM-nv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="686" y="-1164"/>
+            <point key="canvasLocation" x="685.60000000000002" y="-1164.4677661169417"/>
         </scene>
         <!--Beachbody View Controller-->
         <scene sceneID="lj9-Td-FHO">
