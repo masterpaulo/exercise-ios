@@ -18,7 +18,7 @@
 -(IBAction)didSubmit:(id)sender {
     _validUsernames = @[@"demo1", @"demo2", @"demo3"];
     
-    [self.usernameFeild resignFirstResponder];
+
     NSString *username = self.usernameFeild.text;
     NSLog(@"Did submit username: %@", username);
     

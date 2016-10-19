@@ -44,12 +44,16 @@
                                     <constraint firstItem="0zJ-Da-7Jj" firstAttribute="top" secondItem="04Z-cm-8la" secondAttribute="top" constant="-5" id="lxS-aP-RXD"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart-beat-1-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-AY-cKV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grd-hT-IUz">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="VgU-Ww-9ub"/>
-                                    <constraint firstAttribute="height" constant="67" id="ok5-cF-sDe"/>
+                                    <constraint firstAttribute="width" constant="67" id="Ycm-xR-XEa"/>
+                                    <constraint firstAttribute="height" constant="67" id="eP3-MS-jAb"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" image="heart-beat-1-icon"/>
+                                <connections>
+                                    <action selector="tapHeartBeatButton:" destination="1sy-fC-Dqh" eventType="touchUpInside" id="36G-VF-Ivg"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-Cs-xmi" customClass="StreamForm">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start streaming now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPv-Kn-hCB">
@@ -179,7 +183,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="g6f-Cs-xmi" firstAttribute="centerX" secondItem="qyH-6Q-eKR" secondAttribute="centerX" id="1DY-i9-oTV"/>
-                            <constraint firstItem="Kxx-AY-cKV" firstAttribute="trailing" secondItem="g6f-Cs-xmi" secondAttribute="trailing" id="79b-c6-hld"/>
+                            <constraint firstItem="grd-hT-IUz" firstAttribute="top" secondItem="qyH-6Q-eKR" secondAttribute="bottom" constant="24" id="3vA-I1-wwg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="grd-hT-IUz" secondAttribute="trailing" constant="11" id="9DI-J8-naZ"/>
                             <constraint firstItem="bqH-Yk-50Q" firstAttribute="trailing" secondItem="pja-f8-GZZ" secondAttribute="trailing" id="ARw-hC-Kpc"/>
                             <constraint firstItem="pja-f8-GZZ" firstAttribute="leading" secondItem="bqH-Yk-50Q" secondAttribute="leading" id="AWP-M1-3q3"/>
                             <constraint firstItem="qyH-6Q-eKR" firstAttribute="leading" secondItem="VST-IG-qDi" secondAttribute="leading" id="BGL-bE-VdO"/>
@@ -187,7 +192,6 @@
                             <constraint firstItem="pja-f8-GZZ" firstAttribute="bottom" secondItem="GU0-T1-u0z" secondAttribute="top" id="FLe-gC-cPF"/>
                             <constraint firstAttribute="trailing" secondItem="qyH-6Q-eKR" secondAttribute="trailing" id="JQv-V8-NoO"/>
                             <constraint firstItem="qyH-6Q-eKR" firstAttribute="top" secondItem="VST-IG-qDi" secondAttribute="top" id="PrO-oH-faS"/>
-                            <constraint firstItem="Kxx-AY-cKV" firstAttribute="top" secondItem="CMh-ma-t8D" secondAttribute="top" id="YLL-LK-8Ns"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CMh-ma-t8D" secondAttribute="trailing" constant="93" id="aun-Rw-Cyl"/>
                             <constraint firstItem="pNd-pD-hqL" firstAttribute="trailing" secondItem="04Z-cm-8la" secondAttribute="trailing" id="dzM-g8-rry"/>
                             <constraint firstItem="CMh-ma-t8D" firstAttribute="top" secondItem="qyH-6Q-eKR" secondAttribute="bottom" constant="16" id="eDH-0p-AaS"/>
@@ -209,7 +213,7 @@
                     <connections>
                         <outlet property="blurView" destination="bqH-Yk-50Q" id="jh3-Ax-3is"/>
                         <outlet property="greetingLabel" destination="5wk-mf-QGF" id="8Ja-VM-Mey"/>
-                        <outlet property="heartBeatButton" destination="Kxx-AY-cKV" id="ZvU-4h-mCO"/>
+                        <outlet property="heartBeatButton" destination="grd-hT-IUz" id="hBi-CX-Jqg"/>
                         <outlet property="playerView" destination="pja-f8-GZZ" id="Uao-md-QDC"/>
                         <outlet property="shutterButtonView" destination="0zJ-Da-7Jj" id="F2Z-vH-SXU"/>
                         <outlet property="streamGreeting" destination="g6f-Cs-xmi" id="iry-pJ-7QB"/>
@@ -277,12 +281,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bechbodycover" translatesAutoresizingMaskIntoConstraints="NO" id="DIU-sx-6ZQ">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="YTV-5K-8YO"/>
-                                            <constraint firstAttribute="height" constant="74" id="noB-RE-yzk"/>
-                                        </constraints>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-2Y-ady">
                                         <color key="backgroundColor" red="0.87208518401015223" green="0.59958917129813805" blue="0.12963173044664664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -308,6 +306,12 @@
                                             <action selector="showHelpDialogue:" destination="bfA-5C-hFq" eventType="touchUpInside" id="fQZ-EL-pVU"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bechbodycover" translatesAutoresizingMaskIntoConstraints="NO" id="DIU-sx-6ZQ">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="YTV-5K-8YO"/>
+                                            <constraint firstAttribute="height" constant="74" id="noB-RE-yzk"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DIU-sx-6ZQ" firstAttribute="centerX" secondItem="sCb-Pt-C4T" secondAttribute="centerX" id="1cD-dn-80w"/>

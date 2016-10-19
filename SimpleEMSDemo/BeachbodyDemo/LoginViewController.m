@@ -41,7 +41,7 @@
 }
 
 -(void)showHelpInfo{
-    UIAlertController* helpInfoAlert = [UIAlertController alertControllerWithTitle:@"Hi there!" message:@"Please use the following usernames without a password:\ndemo1\ndemo2\ndemo3" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController* helpInfoAlert = [UIAlertController alertControllerWithTitle:@"Hi there!" message:@"Please use the following usernames \nand leave the password feild blank:\ndemo1\ndemo2\ndemo3" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction* okBtn = [UIAlertAction actionWithTitle:@"Got it!" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [_loginForm.usernameFeild becomeFirstResponder];
