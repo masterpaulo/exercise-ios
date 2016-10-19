@@ -146,6 +146,10 @@
     [self.view endEditing:YES];
 }
 
+- (IBAction)logout:(id)sender {
+    [self endBroadcast];
+    [self performSegueWithIdentifier:@"toLoginScreen" sender:self];
+}
 
 #pragma mark StreamFormDelegate
 -(void)didSubmitForm:(StreamForm *)form {

@@ -27,6 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.loginForm setDelegate:self];
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
     
 }
 
