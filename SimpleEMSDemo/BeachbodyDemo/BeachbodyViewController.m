@@ -158,7 +158,7 @@
 #pragma mark HeartBeatButtonDelgate
 -(void)heartBeatRate:(int)level {
     NSString *username = self.username;
-    NSString *url = @"http://192.168.0.116/beachbody-webservices/index.php/heartbeat";
+    NSString *url = @"http://dev.wylog.com/beachbody-webservices/index.php/heartbeat";
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
     
