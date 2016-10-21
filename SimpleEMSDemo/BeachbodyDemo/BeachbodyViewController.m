@@ -20,7 +20,7 @@
 #import "StreamForm.h"
 #import "HeartBeatButton.h"
 
-@interface BeachbodyViewController ()<ShutterButtonViewDelegate, EMSListenerDelegate, AudioVideoCaptureDelegate, StreamFormDelegate>
+@interface BeachbodyViewController ()<ShutterButtonViewDelegate, EMSListenerDelegate, AudioVideoCaptureDelegate, StreamFormDelegate, HeartBeatButtonDelegate>
 @property (weak, nonatomic) IBOutlet StreamForm *streamForm;
 
 @property (weak, nonatomic) IBOutlet PlayerView *playerView;
@@ -81,6 +81,7 @@
     [self getActiveUser];
     
     [self.heartBeatButtonView initialize];
+    [self.heartBeatButtonView setDelegate:self];
     
     
     
@@ -153,6 +154,26 @@
 #pragma mark StreamFormDelegate
 -(void)didSubmitForm:(StreamForm *)form {
 }
+
+#pragma mark HeartBeatButtonDelgate
+-(void)heartBeatRate:(int)level {
+    NSString *username = self.username;
+    NSString *url = @"http://192.168.0.116/beachbody-webservices/index.php/heartbeat";
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    
+    [request setHTTPMethod:@"POST"];
+    
+    NSString *postData = [NSString stringWithFormat:@"id=%@&heartbeat=%i", username, level ];
+    NSLog(@"%@",postData);
+    
+    [request setValue:[NSString stringWithFormat:@"%d", [postData length]] forHTTPHeaderField:@"Content-length"];
+    [request setHTTPBody:[postData dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+
+}
+
 
 - (IBAction)startBroadcast:(id)sender {
     NSString *streamName = self.username;

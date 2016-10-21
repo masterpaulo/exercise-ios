@@ -10,19 +10,10 @@
 
 @implementation HeartBeatButton
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
-
-
 
 - (void)initialize{
     [self addTapGesturesToHeartBeatButton: self.heartBeatButton];
+    self.username = @"demo1";
    
 }
 
@@ -76,6 +67,8 @@
     NSLog(@"Heartbeat Button tapped once.");
     UIButton *heartBeat = _heartBeatButton;
     [heartBeat setImage:[UIImage imageNamed:@"heart-beat-1-icon.png"] forState:UIControlStateNormal];
+    [self heartBeatWebservice:1];
+    
     
     
 }
@@ -83,11 +76,20 @@
     NSLog(@"Heartbeat Button tapped twice.");
     UIButton *heartBeat = _heartBeatButton;
     [heartBeat setImage:[UIImage imageNamed:@"heart-beat-2-icon.png"] forState:UIControlStateNormal];
+    [self heartBeatWebservice:2];
 }
 -(void)tripleTapHeartBeatButton{
     NSLog(@"Heartbeat Button tapped three times.");
     UIButton *heartBeat = _heartBeatButton;
     [heartBeat setImage:[UIImage imageNamed:@"heart-beat-3-icon.png"] forState:UIControlStateNormal];
+    [self heartBeatWebservice:3];
+}
+
+//send heartbeat rate back to delegate
+- (void) heartBeatWebservice:(int) level{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(heartBeatRate:)]) {
+        [self.delegate heartBeatRate:level];
+    }
 }
 
 
