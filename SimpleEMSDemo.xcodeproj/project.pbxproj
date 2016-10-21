@@ -11,6 +11,7 @@
 		21A590C71DAF31FE0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
 		21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
 		21A590CA1DAF54500006E45B /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C01DAF25230006E45B /* LoginForm.m */; };
+		21BB64771DB8669600B99F69 /* HeartBeatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BB64761DB8669600B99F69 /* HeartBeatButton.m */; };
 		453CCC4F1D9C0F80003C59B8 /* MyFMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453CCC4E1D9C0F80003C59B8 /* MyFMTests.m */; };
 		456F3CCB1D9BBEE200E674FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCA1D9BBEE200E674FC /* main.m */; };
 		456F3CCE1D9BBEE200E674FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 456F3CCD1D9BBEE200E674FC /* AppDelegate.m */; };
@@ -104,6 +105,8 @@
 		21A590C01DAF25230006E45B /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
 		21A590C51DAF31FE0006E45B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		21A590C61DAF31FE0006E45B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		21BB64751DB8669600B99F69 /* HeartBeatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartBeatButton.h; sourceTree = "<group>"; };
+		21BB64761DB8669600B99F69 /* HeartBeatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartBeatButton.m; sourceTree = "<group>"; };
 		453CCC471D9C0F80003C59B8 /* MyFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		453CCC4E1D9C0F80003C59B8 /* MyFMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFMTests.m; sourceTree = "<group>"; };
 		453CCC501D9C0F80003C59B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -282,6 +285,8 @@
 				21A590C01DAF25230006E45B /* LoginForm.m */,
 				21A590C51DAF31FE0006E45B /* LoginViewController.h */,
 				21A590C61DAF31FE0006E45B /* LoginViewController.m */,
+				21BB64751DB8669600B99F69 /* HeartBeatButton.h */,
+				21BB64761DB8669600B99F69 /* HeartBeatButton.m */,
 			);
 			path = BeachbodyDemo;
 			sourceTree = "<group>";
@@ -387,7 +392,6 @@
 					};
 					456F3CC51D9BBEE200E674FC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = A38A2SP759;
 						ProvisioningStyle = Automatic;
 					};
 					4584346B1DA5D93B00CF4E4C = {
@@ -507,6 +511,7 @@
 				458434741DA5D93B00CF4E4C /* AppDelegate.m in Sources */,
 				21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */,
 				458434751DA5D93B00CF4E4C /* main.m in Sources */,
+				21BB64771DB8669600B99F69 /* HeartBeatButton.m in Sources */,
 				458434AD1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */,
 				458434761DA5D93B00CF4E4C /* PlayerView.m in Sources */,
 				21A590CA1DAF54500006E45B /* LoginForm.m in Sources */,
@@ -661,7 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = A38A2SP759;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,7 +675,7 @@
 				INFOPLIST_FILE = SimpleEMSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbody.beach;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.emsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -681,7 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: dev.masterpaulo@gmail.com (8FNC29ZQ82)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = A38A2SP759;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,7 +695,7 @@
 				INFOPLIST_FILE = SimpleEMSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbody.beach;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.emsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

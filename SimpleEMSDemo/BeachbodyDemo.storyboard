@@ -44,16 +44,29 @@
                                     <constraint firstItem="0zJ-Da-7Jj" firstAttribute="top" secondItem="04Z-cm-8la" secondAttribute="top" constant="-5" id="lxS-aP-RXD"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grd-hT-IUz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4A-zM-Fma" userLabel="HeartBeatButton View" customClass="HeartBeatButton">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grd-hT-IUz">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="67" id="Ycm-xR-XEa"/>
+                                            <constraint firstAttribute="height" constant="67" id="eP3-MS-jAb"/>
+                                        </constraints>
+                                        <state key="normal" image="heart-beat-1-icon"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="r4A-zM-Fma" eventType="touchUpInside" id="Iir-b6-m8o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="Ycm-xR-XEa"/>
-                                    <constraint firstAttribute="height" constant="67" id="eP3-MS-jAb"/>
+                                    <constraint firstItem="grd-hT-IUz" firstAttribute="centerX" secondItem="r4A-zM-Fma" secondAttribute="centerX" id="64F-hL-cRi"/>
+                                    <constraint firstAttribute="width" secondItem="grd-hT-IUz" secondAttribute="width" id="Rnb-3Z-bs9"/>
+                                    <constraint firstAttribute="height" secondItem="grd-hT-IUz" secondAttribute="height" id="eo4-Pk-Uu8"/>
+                                    <constraint firstItem="grd-hT-IUz" firstAttribute="centerY" secondItem="r4A-zM-Fma" secondAttribute="centerY" id="r5m-3l-0jQ"/>
                                 </constraints>
-                                <state key="normal" image="heart-beat-1-icon"/>
                                 <connections>
-                                    <action selector="tapHeartBeatButton:" destination="1sy-fC-Dqh" eventType="touchUpInside" id="36G-VF-Ivg"/>
+                                    <outlet property="heartBeatButton" destination="grd-hT-IUz" id="Lwg-ta-NM0"/>
                                 </connections>
-                            </button>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-Cs-xmi" customClass="StreamForm">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start streaming now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPv-Kn-hCB">
@@ -183,14 +196,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="g6f-Cs-xmi" firstAttribute="centerX" secondItem="qyH-6Q-eKR" secondAttribute="centerX" id="1DY-i9-oTV"/>
-                            <constraint firstItem="grd-hT-IUz" firstAttribute="top" secondItem="qyH-6Q-eKR" secondAttribute="bottom" constant="24" id="3vA-I1-wwg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="grd-hT-IUz" secondAttribute="trailing" constant="11" id="9DI-J8-naZ"/>
+                            <constraint firstItem="r4A-zM-Fma" firstAttribute="top" secondItem="qyH-6Q-eKR" secondAttribute="bottom" constant="16" id="2ws-Iq-cPk"/>
                             <constraint firstItem="bqH-Yk-50Q" firstAttribute="trailing" secondItem="pja-f8-GZZ" secondAttribute="trailing" id="ARw-hC-Kpc"/>
                             <constraint firstItem="pja-f8-GZZ" firstAttribute="leading" secondItem="bqH-Yk-50Q" secondAttribute="leading" id="AWP-M1-3q3"/>
                             <constraint firstItem="qyH-6Q-eKR" firstAttribute="leading" secondItem="VST-IG-qDi" secondAttribute="leading" id="BGL-bE-VdO"/>
                             <constraint firstItem="bqH-Yk-50Q" firstAttribute="bottom" secondItem="GU0-T1-u0z" secondAttribute="top" id="CLB-Gc-b4L"/>
                             <constraint firstItem="pja-f8-GZZ" firstAttribute="bottom" secondItem="GU0-T1-u0z" secondAttribute="top" id="FLe-gC-cPF"/>
                             <constraint firstAttribute="trailing" secondItem="qyH-6Q-eKR" secondAttribute="trailing" id="JQv-V8-NoO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r4A-zM-Fma" secondAttribute="trailing" id="JYY-yS-y09"/>
                             <constraint firstItem="qyH-6Q-eKR" firstAttribute="top" secondItem="VST-IG-qDi" secondAttribute="top" id="PrO-oH-faS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CMh-ma-t8D" secondAttribute="trailing" constant="93" id="aun-Rw-Cyl"/>
                             <constraint firstItem="pNd-pD-hqL" firstAttribute="trailing" secondItem="04Z-cm-8la" secondAttribute="trailing" id="dzM-g8-rry"/>
@@ -213,7 +226,7 @@
                     <connections>
                         <outlet property="blurView" destination="bqH-Yk-50Q" id="jh3-Ax-3is"/>
                         <outlet property="greetingLabel" destination="5wk-mf-QGF" id="8Ja-VM-Mey"/>
-                        <outlet property="heartBeatButton" destination="grd-hT-IUz" id="hBi-CX-Jqg"/>
+                        <outlet property="heartBeatButtonView" destination="r4A-zM-Fma" id="Lt4-eW-jAA"/>
                         <outlet property="playerView" destination="pja-f8-GZZ" id="Uao-md-QDC"/>
                         <outlet property="shutterButtonView" destination="0zJ-Da-7Jj" id="F2Z-vH-SXU"/>
                         <outlet property="streamGreeting" destination="g6f-Cs-xmi" id="iry-pJ-7QB"/>

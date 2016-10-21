@@ -18,6 +18,7 @@
 #import "LiveShutterButtonViewMode.h"
 
 #import "StreamForm.h"
+#import "HeartBeatButton.h"
 
 @interface BeachbodyViewController ()<ShutterButtonViewDelegate, EMSListenerDelegate, AudioVideoCaptureDelegate, StreamFormDelegate>
 @property (weak, nonatomic) IBOutlet StreamForm *streamForm;
@@ -30,7 +31,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
 @property (weak, nonatomic) IBOutlet StreamForm *streamGreeting;
-@property (weak, nonatomic) IBOutlet UIButton *heartBeatButton;
+
+@property (strong, nonatomic) IBOutlet HeartBeatButton *heartBeatButtonView;
 
 
 @property (nonatomic, strong) NSString *streamName;
@@ -78,7 +80,8 @@
     [self setViewStreaming:NO];
     [self getActiveUser];
     
-    [self addTapGesturesToHeartBeatButton: self.heartBeatButton];
+    [self.heartBeatButtonView initialize];
+    
     
     
 }
@@ -86,15 +89,11 @@
 -(void)viewDidAppear:(BOOL)animated {
     [self startCapturing];
     [self restart];
-//    if (!([self.username length] > 0)) {
-//        [self performSegueWithIdentifier:@"toLoginScreen" sender:self];
-//    }
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.shutterMode defaultMode];
-//    [self getActiveUser];
 }
 
 - (void)startCapturing
@@ -129,55 +128,18 @@
 -(void)setViewStreaming:(BOOL)streaming {
     if(streaming){
         [self.shutterButtonView setHidden:NO];
-        [self.heartBeatButton setHidden:NO];
+        [self.heartBeatButtonView setHidden:NO];
         [self.blurView setHidden:YES];
         [self.streamGreeting setHidden:YES];
     }
     else{
         [self.shutterButtonView setHidden:YES];
-        [self.heartBeatButton setHidden:YES];
+        [self.heartBeatButtonView setHidden:YES];
         [self.blurView setHidden:NO];
         [self.streamGreeting setHidden:NO];
     }
 }
 
-- (IBAction)tapHeartBeatButton:(id)sender {
-//    UITapGestureRecognizer
-}
-
--(void)addTapGesturesToHeartBeatButton:(UIButton *) heartBeatButton{
-    UITapGestureRecognizer *heartBeatButtonSingleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapHeartBeatButton) ];
-    heartBeatButtonSingleTapGesture.numberOfTapsRequired = 1;
-    [heartBeatButton addGestureRecognizer:heartBeatButtonSingleTapGesture];
-    
-    UITapGestureRecognizer *heartBeatButtonDoubleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapHeartBeatButton)];
-    heartBeatButtonDoubleTapGesture.numberOfTapsRequired = 2;
-    [heartBeatButton addGestureRecognizer:heartBeatButtonDoubleTapGesture];
-    
-    UITapGestureRecognizer *heartBeatButtonTripleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tripleTapHeartBeatButton)];
-    heartBeatButtonTripleTapGesture.numberOfTapsRequired = 3;
-    [heartBeatButton addGestureRecognizer:heartBeatButtonTripleTapGesture];
-    
-    [heartBeatButtonSingleTapGesture requireGestureRecognizerToFail:heartBeatButtonDoubleTapGesture];
-    [heartBeatButtonDoubleTapGesture requireGestureRecognizerToFail:heartBeatButtonTripleTapGesture];
-
-}
-
--(void)singleTapHeartBeatButton{
-    NSLog(@"Heartbeat Button tapped once.");
-    UIButton *heartBeat = _heartBeatButton;
-    [heartBeat setImage:[UIImage imageNamed:@"heart-beat-1-icon.png"] forState:UIControlStateNormal];
-}
--(void)doubleTapHeartBeatButton{
-    NSLog(@"Heartbeat Button tapped twice.");
-    UIButton *heartBeat = _heartBeatButton;
-    [heartBeat setImage:[UIImage imageNamed:@"heart-beat-2-icon.png"] forState:UIControlStateNormal];
-}
--(void)tripleTapHeartBeatButton{
-    NSLog(@"Heartbeat Button tapped three times.");
-    UIButton *heartBeat = _heartBeatButton;
-    [heartBeat setImage:[UIImage imageNamed:@"heart-beat-3-icon.png"] forState:UIControlStateNormal];
-}
 
 - (IBAction)dismissTapped:(id)sender {
     [self.view endEditing:YES];
