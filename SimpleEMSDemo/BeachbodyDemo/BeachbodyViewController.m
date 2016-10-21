@@ -191,6 +191,8 @@
                 [self.shutterMode setEnabled:YES];
                 [self setViewStreaming:YES];
                 [self.shutterMode captureState];
+                
+                [self heartBeatRate:1];
             });
         }
     }];
@@ -205,6 +207,7 @@
     self.usernameLabel.text = @"Stream stoped";
     [self.shutterMode defaultMode];
     [self setViewStreaming:NO];
+    [self heartBeatRate:1];
     self.streamName  = nil;
     [self.streamForm clearForm];
     [self.mediaStreamer removeConfig:self.configId];
