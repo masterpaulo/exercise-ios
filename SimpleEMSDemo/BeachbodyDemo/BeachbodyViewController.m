@@ -167,7 +167,7 @@
     NSString *postData = [NSString stringWithFormat:@"id=%@&heartbeat=%i", username, level ];
     NSLog(@"%@",postData);
     
-    [request setValue:[NSString stringWithFormat:@"%d", [postData length]] forHTTPHeaderField:@"Content-length"];
+    [request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[postData length]] forHTTPHeaderField:@"Content-length"];
     [request setHTTPBody:[postData dataUsingEncoding:NSUTF8StringEncoding]];
     
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];

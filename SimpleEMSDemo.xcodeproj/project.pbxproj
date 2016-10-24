@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217580111DBDB0210003BC51 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 217580101DBDB0210003BC51 /* DLRadioButton.m */; };
 		21A590C11DAF25230006E45B /* LoginForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C01DAF25230006E45B /* LoginForm.m */; };
 		21A590C71DAF31FE0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
 		21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A590C61DAF31FE0006E45B /* LoginViewController.m */; };
@@ -101,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2175800F1DBDB0210003BC51 /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		217580101DBDB0210003BC51 /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		21A590BF1DAF244B0006E45B /* LoginForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginForm.h; sourceTree = "<group>"; };
 		21A590C01DAF25230006E45B /* LoginForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginForm.m; sourceTree = "<group>"; };
 		21A590C51DAF31FE0006E45B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2175800E1DBDB0210003BC51 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				2175800F1DBDB0210003BC51 /* DLRadioButton.h */,
+				217580101DBDB0210003BC51 /* DLRadioButton.m */,
+			);
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		217580121DBDB04F0003BC51 /* HeartBeatButton */ = {
+			isa = PBXGroup;
+			children = (
+				21BB64751DB8669600B99F69 /* HeartBeatButton.h */,
+				21BB64761DB8669600B99F69 /* HeartBeatButton.m */,
+			);
+			name = HeartBeatButton;
+			sourceTree = "<group>";
+		};
 		453CCC4D1D9C0F80003C59B8 /* MyFMTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,8 +306,8 @@
 				21A590C01DAF25230006E45B /* LoginForm.m */,
 				21A590C51DAF31FE0006E45B /* LoginViewController.h */,
 				21A590C61DAF31FE0006E45B /* LoginViewController.m */,
-				21BB64751DB8669600B99F69 /* HeartBeatButton.h */,
-				21BB64761DB8669600B99F69 /* HeartBeatButton.m */,
+				2175800E1DBDB0210003BC51 /* DLRadioButton */,
+				217580121DBDB04F0003BC51 /* HeartBeatButton */,
 			);
 			path = BeachbodyDemo;
 			sourceTree = "<group>";
@@ -511,6 +532,7 @@
 				458434741DA5D93B00CF4E4C /* AppDelegate.m in Sources */,
 				21A590C91DAF375E0006E45B /* LoginViewController.m in Sources */,
 				458434751DA5D93B00CF4E4C /* main.m in Sources */,
+				217580111DBDB0210003BC51 /* DLRadioButton.m in Sources */,
 				21BB64771DB8669600B99F69 /* HeartBeatButton.m in Sources */,
 				458434AD1DA5DEF400CF4E4C /* PhotoShutterButtonViewMode.m in Sources */,
 				458434761DA5D93B00CF4E4C /* PlayerView.m in Sources */,
@@ -715,7 +737,7 @@
 				INFOPLIST_FILE = "SimpleEMSDemo copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -736,7 +758,7 @@
 				INFOPLIST_FILE = "SimpleEMSDemo copy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wylog.beachbodyPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

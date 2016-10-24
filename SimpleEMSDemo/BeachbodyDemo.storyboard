@@ -297,7 +297,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-2Y-ady">
                                         <color key="backgroundColor" red="0.87208518401015223" green="0.59958917129813805" blue="0.12963173044664664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="156" id="cqt-oh-8L7"/>
+                                            <constraint firstAttribute="width" constant="241" id="cqt-oh-8L7"/>
                                         </constraints>
                                         <state key="normal" title="login">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -325,21 +325,55 @@
                                             <constraint firstAttribute="height" constant="74" id="noB-RE-yzk"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJP-v8-zA0" customClass="DLRadioButton">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="z0N-Oh-tdC"/>
+                                        </constraints>
+                                        <state key="normal" title="A coach">
+                                            <color key="titleColor" red="0.19111403709999999" green="0.27430878419999999" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                <color key="value" red="0.87170439958572388" green="0.60195153951644897" blue="0.12618494033813477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="otherButtons" destination="7mY-YU-xNv" id="NqQ-Wo-c9N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mY-YU-xNv" customClass="DLRadioButton">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="lzs-P1-ITy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <state key="normal" title="A user">
+                                            <color key="titleColor" red="0.19111403709999999" green="0.27430878419999999" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                <color key="value" red="0.87170439958572388" green="0.60195153951644897" blue="0.12618494033813477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DIU-sx-6ZQ" firstAttribute="centerX" secondItem="sCb-Pt-C4T" secondAttribute="centerX" id="1cD-dn-80w"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="top" secondItem="DIU-sx-6ZQ" secondAttribute="bottom" constant="92" id="1ck-kh-Z8b"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="leading" secondItem="sCb-Pt-C4T" secondAttribute="leading" constant="67" id="BR3-ae-Dwi"/>
+                                    <constraint firstItem="rJP-v8-zA0" firstAttribute="leading" secondItem="io2-4D-oA8" secondAttribute="leading" id="GwW-36-jze"/>
                                     <constraint firstItem="bbi-DD-wez" firstAttribute="top" secondItem="io2-4D-oA8" secondAttribute="bottom" constant="17" id="UQF-GS-rJt"/>
                                     <constraint firstItem="PMz-2Y-ady" firstAttribute="centerX" secondItem="DIU-sx-6ZQ" secondAttribute="centerX" constant="-1" id="YMe-Ik-oNV"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="top" secondItem="Ueo-07-omr" secondAttribute="bottom" constant="43" id="Yq9-YI-SEH"/>
+                                    <constraint firstItem="PMz-2Y-ady" firstAttribute="top" secondItem="7mY-YU-xNv" secondAttribute="bottom" constant="20" id="ZSf-41-w2y"/>
+                                    <constraint firstItem="PMz-2Y-ady" firstAttribute="top" secondItem="rJP-v8-zA0" secondAttribute="bottom" constant="20" id="cs0-3l-A7Y"/>
                                     <constraint firstItem="bbi-DD-wez" firstAttribute="centerX" secondItem="io2-4D-oA8" secondAttribute="centerX" id="eLP-Xz-b72"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="trailing" secondItem="io2-4D-oA8" secondAttribute="trailing" id="hC2-zu-XFS"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="centerX" secondItem="6Wf-dU-SbC" secondAttribute="centerX" id="icW-Db-y1a"/>
                                     <constraint firstItem="io2-4D-oA8" firstAttribute="top" secondItem="6Wf-dU-SbC" secondAttribute="bottom" constant="27" id="j81-mS-J4m"/>
-                                    <constraint firstItem="PMz-2Y-ady" firstAttribute="top" secondItem="io2-4D-oA8" secondAttribute="bottom" constant="93" id="k7r-sp-ctH"/>
+                                    <constraint firstItem="PMz-2Y-ady" firstAttribute="top" secondItem="io2-4D-oA8" secondAttribute="bottom" constant="137" id="k7r-sp-ctH"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="top" secondItem="sCb-Pt-C4T" secondAttribute="top" constant="68" id="lqR-jb-yor"/>
                                     <constraint firstItem="DIU-sx-6ZQ" firstAttribute="top" secondItem="sCb-Pt-C4T" secondAttribute="top" id="nti-zK-Knt"/>
+                                    <constraint firstItem="7mY-YU-xNv" firstAttribute="trailing" secondItem="io2-4D-oA8" secondAttribute="trailing" id="rDO-QJ-hoA"/>
                                     <constraint firstItem="Ueo-07-omr" firstAttribute="centerX" secondItem="sCb-Pt-C4T" secondAttribute="centerX" id="rHm-H6-3lJ"/>
                                     <constraint firstItem="6Wf-dU-SbC" firstAttribute="leading" secondItem="io2-4D-oA8" secondAttribute="leading" id="xPm-6b-Umc"/>
                                 </constraints>
@@ -354,7 +388,7 @@
                             <constraint firstAttribute="trailing" secondItem="sCb-Pt-C4T" secondAttribute="trailing" id="Dw8-jD-pH4"/>
                             <constraint firstItem="sCb-Pt-C4T" firstAttribute="leading" secondItem="Kjp-Ve-XEK" secondAttribute="leading" id="Icm-ha-foh"/>
                             <constraint firstItem="sCb-Pt-C4T" firstAttribute="top" secondItem="gcr-qf-E68" secondAttribute="bottom" constant="96" id="JAj-2E-aBq"/>
-                            <constraint firstItem="PXn-YP-5Ty" firstAttribute="top" secondItem="sCb-Pt-C4T" secondAttribute="bottom" constant="150" id="i3B-UG-mDe"/>
+                            <constraint firstItem="PXn-YP-5Ty" firstAttribute="top" secondItem="sCb-Pt-C4T" secondAttribute="bottom" constant="25" id="i3B-UG-mDe"/>
                         </constraints>
                     </view>
                     <connections>
