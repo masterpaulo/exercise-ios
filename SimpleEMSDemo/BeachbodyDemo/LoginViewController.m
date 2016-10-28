@@ -11,10 +11,10 @@
 
 #import "LoginForm.h"
 
-@interface LoginViewController()<LoginFormDelegate>
+@interface LoginViewController()<LoginFormDelegate, UITextFieldDelegate>
 
 
-@property (weak, nonatomic) IBOutlet LoginForm *loginForm;
+@property (strong, nonatomic) IBOutlet LoginForm *loginForm;
 @property (nonatomic, strong) NSString *username;
 
 //@property (nonatomic, weak) id<LoginViewDelegate> delegate;
@@ -28,6 +28,8 @@
     // Do any additional setup after loading the view.
     [self.loginForm setDelegate:self];
     [UIApplication sharedApplication].idleTimerDisabled = YES;
+    _loginForm.usernameFeild.delegate = self;
+    _loginForm.passwordFeild.delegate = self;
     
 }
 
@@ -65,7 +67,10 @@
     [self showHelpInfo];
 }
 
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
 #pragma mark - Navigation
 
